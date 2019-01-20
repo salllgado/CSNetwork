@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSNetwork_Example' do
+  pod 'CSNetwork', :path => '../'
+
+  target 'CSNetwork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
