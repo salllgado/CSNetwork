@@ -15,6 +15,11 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B8580F7F21F4A537006EA92B /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8580F7E21F4A537006EA92B /* Manager.swift */; };
+		B8580F8821F4D951006EA92B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8580F8721F4D951006EA92B /* Endpoint.swift */; };
+		B8580F8D21F4EA69006EA92B /* BasicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8580F8C21F4EA69006EA92B /* BasicRequest.swift */; };
+		B87DC3C721F4ECAB006BC0AE /* CharResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DC3C621F4ECAB006BC0AE /* CharResponse.swift */; };
+		B87DC3C921F4ECE4006BC0AE /* MarvelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DC3C821F4ECE4006BC0AE /* MarvelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +34,10 @@
 
 /* Begin PBXFileReference section */
 		0CE4F39BF5405EB736640F56 /* Pods_CSNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A85F93EA77EE5369AD58F2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1A85F93EA77EE5369AD58F2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3BC54DCBA913482AA9A547A4 /* Pods-CSNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSNetwork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSNetwork_Tests/Pods-CSNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3CAF291BE54D71CE2733D9B9 /* Pods-CSNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSNetwork_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4D987197ADF7818484605BAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4D987197ADF7818484605BAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CSNetwork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSNetwork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +48,13 @@
 		607FACE51AFB9204008FA782 /* CSNetwork_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSNetwork_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		894CB058B62F2E886D0F071D /* CSNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CSNetwork.podspec; path = ../CSNetwork.podspec; sourceTree = "<group>"; };
+		894CB058B62F2E886D0F071D /* CSNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CSNetwork.podspec; path = ../CSNetwork.podspec; sourceTree = "<group>"; };
 		A1B9278C19CE35B95A8A2248 /* Pods-CSNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSNetwork_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B8580F7E21F4A537006EA92B /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		B8580F8721F4D951006EA92B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B8580F8C21F4EA69006EA92B /* BasicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequest.swift; sourceTree = "<group>"; };
+		B87DC3C621F4ECAB006BC0AE /* CharResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharResponse.swift; sourceTree = "<group>"; };
+		B87DC3C821F4ECE4006BC0AE /* MarvelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelData.swift; sourceTree = "<group>"; };
 		CFC070A79369E77F743E789A /* Pods-CSNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSNetwork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSNetwork_Tests/Pods-CSNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F977F31208FFCDF275408826 /* Pods_CSNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,12 +103,9 @@
 		607FACD21AFB9204008FA782 /* Example for CSNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				B8580F8621F4A62F006EA92B /* Resources */,
+				B8580F8521F4A602006EA92B /* Sources */,
+				B8580F8421F4A5F7006EA92B /* Other Sources */,
 			);
 			name = "Example for CSNetwork";
 			path = CSNetwork;
@@ -150,6 +157,71 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B8580F8021F4A5D4006EA92B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B8580F7E21F4A537006EA92B /* Manager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		B8580F8121F4A5DA006EA92B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B8580F8721F4D951006EA92B /* Endpoint.swift */,
+				B8580F8321F4A5E7006EA92B /* Response */,
+				B8580F8221F4A5E2006EA92B /* Request */,
+				B8580F8021F4A5D4006EA92B /* Manager */,
+			);
+			name = Network;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B8580F8221F4A5E2006EA92B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B8580F8C21F4EA69006EA92B /* BasicRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		B8580F8321F4A5E7006EA92B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				B87DC3C621F4ECAB006BC0AE /* CharResponse.swift */,
+				B87DC3C821F4ECE4006BC0AE /* MarvelData.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		B8580F8421F4A5F7006EA92B /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		B8580F8521F4A602006EA92B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				B8580F8121F4A5DA006EA92B /* Network */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B8580F8621F4A62F006EA92B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C35CDCC394453F0379C34E4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +242,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				205C0358CD2EA1EEA09C3E98 /* [CP] Embed Pods Frameworks */,
+				F5152706C4E8945D2F41D5E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,7 +280,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = CSProductions;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -261,28 +333,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		205C0358CD2EA1EEA09C3E98 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CSNetwork/CSNetwork.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSNetwork.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2EEAC343E8FEC98A8207E3E2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +377,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F5152706C4E8945D2F41D5E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSNetwork/CSNetwork.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSNetwork.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -334,7 +406,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8580F8D21F4EA69006EA92B /* BasicRequest.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B87DC3C721F4ECAB006BC0AE /* CharResponse.swift in Sources */,
+				B8580F7F21F4A537006EA92B /* Manager.swift in Sources */,
+				B8580F8821F4D951006EA92B /* Endpoint.swift in Sources */,
+				B87DC3C921F4ECE4006BC0AE /* MarvelData.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
