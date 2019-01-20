@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    @IBAction func actionRequest(action: Any) {
         let params = BasicRequest(apikey: "1e2c15eb35da31cfc4aa9d270ccfdb4c", name: "Hulk")
         let manager = CSManager()
         manager.requestStatements(params) { (charResponse) in
