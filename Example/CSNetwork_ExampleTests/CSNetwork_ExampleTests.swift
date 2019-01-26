@@ -40,18 +40,3 @@ class CSNetwork_ExampleTests: XCTestCase {
         }
     }
 }
-
-extension Encodable {
-    
-    func toDict() throws -> [String: String]? {
-        do {
-            let jsonData = try JSONEncoder().encode(self)
-            let dict = try JSONSerialization.jsonObject(with: jsonData)
-            let dictionary = dict as! [String: String]
-            return dictionary
-        } catch {
-            print(error.localizedDescription)
-        }
-        return nil
-    }
-}

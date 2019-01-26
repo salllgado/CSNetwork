@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-CSNetwork_Tests.xcscheme</key>
+		<key>Pods-CSNetwork_ExampleTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
