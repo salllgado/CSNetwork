@@ -28,7 +28,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionRequestWithAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CGr-Ld-FWV"/>
+                                    <action selector="actionRequestWithAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JsS-5p-ibr"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -9,6 +9,7 @@ import Foundation
 
 extension Encodable {
     
+    /// Convert Encodable type to urlQueryItems
     public func toURLQueryItem() throws -> [URLQueryItem] {
         var urlQueryItems: [URLQueryItem] = []
         
@@ -25,6 +26,7 @@ extension Encodable {
         return urlQueryItems
     }
     
+    /// Convert Encodable type to jsonData.
     public func toJsonData() throws -> Data {
         let jsonData = try JSONEncoder().encode(self)
         return jsonData

@@ -15,10 +15,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B8330BC021FCD70F008B98A0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8330BBF21FCD70F008B98A0 /* Movie.swift */; };
 		B8580F7F21F4A537006EA92B /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8580F7E21F4A537006EA92B /* Manager.swift */; };
 		B8580F8821F4D951006EA92B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8580F8721F4D951006EA92B /* Endpoint.swift */; };
 		B8580F8D21F4EA69006EA92B /* BasicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8580F8C21F4EA69006EA92B /* BasicRequest.swift */; };
-		B87DC3C721F4ECAB006BC0AE /* CharResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DC3C621F4ECAB006BC0AE /* CharResponse.swift */; };
 		B87DC3C921F4ECE4006BC0AE /* MarvelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DC3C821F4ECE4006BC0AE /* MarvelData.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,10 +50,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		894CB058B62F2E886D0F071D /* CSNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CSNetwork.podspec; path = ../CSNetwork.podspec; sourceTree = "<group>"; };
 		A1B9278C19CE35B95A8A2248 /* Pods-CSNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSNetwork_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSNetwork_Example/Pods-CSNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B8330BBF21FCD70F008B98A0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		B8580F7E21F4A537006EA92B /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		B8580F8721F4D951006EA92B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		B8580F8C21F4EA69006EA92B /* BasicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequest.swift; sourceTree = "<group>"; };
-		B87DC3C621F4ECAB006BC0AE /* CharResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharResponse.swift; sourceTree = "<group>"; };
 		B87DC3C821F4ECE4006BC0AE /* MarvelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelData.swift; sourceTree = "<group>"; };
 		CFC070A79369E77F743E789A /* Pods-CSNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSNetwork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSNetwork_Tests/Pods-CSNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F977F31208FFCDF275408826 /* Pods_CSNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,8 +188,8 @@
 		B8580F8321F4A5E7006EA92B /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				B87DC3C621F4ECAB006BC0AE /* CharResponse.swift */,
 				B87DC3C821F4ECE4006BC0AE /* MarvelData.swift */,
+				B8330BBF21FCD70F008B98A0 /* Movie.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -406,9 +406,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8330BC021FCD70F008B98A0 /* Movie.swift in Sources */,
 				B8580F8D21F4EA69006EA92B /* BasicRequest.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				B87DC3C721F4ECAB006BC0AE /* CharResponse.swift in Sources */,
 				B8580F7F21F4A537006EA92B /* Manager.swift in Sources */,
 				B8580F8821F4D951006EA92B /* Endpoint.swift in Sources */,
 				B87DC3C921F4ECE4006BC0AE /* MarvelData.swift in Sources */,
