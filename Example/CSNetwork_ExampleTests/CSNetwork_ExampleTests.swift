@@ -24,9 +24,34 @@ class CSNetwork_ExampleTests: XCTestCase {
         let objResponse = BasicRequest(apikey: "111", name: "AAA")
         
         do {
+            let jsonString: [String: String] = [
+                "apikey": "111",
+                "name": "AAA"
+            ]
             
+            guard let dictResponse = try objResponse.toDict() else {
+                XCTFail("Error while convert object in dictionary.")
+                return
+            }
+            
+            XCTAssert(NSDictionary(dictionary: dictResponse).isEqual(to: jsonString))
         } catch {
             XCTFail("\(error.localizedDescription)")
         }
+    }
+}
+
+extension Encodable {
+    
+    func toDict() throws -> [String: String]? {
+        do {
+            let jsonData = try JSONEncoder().encode(self)
+            let dict = try JSONSerialization.jsonObject(with: jsonData)
+            let dictionary = dict as! [String: String]
+            return dictionary
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
     }
 }
