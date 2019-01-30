@@ -13,16 +13,21 @@ public enum RequestType: String {
     case put = "PUT"
 }
 
+public enum SchemeType: String {
+    case https = "https"
+    case http = "http"
+}
+
 open class CSManager {
     
     public init () {
     }
     
-    public func request<T: Encodable>(_ request: T, host: String, route: String, httpMethod: RequestType, responseHandler: @escaping (Data) -> Void) {
+    public func request<T: Encodable>(_ request: T, scheme: SchemeType, host: String, route: String, httpMethod: RequestType, responseHandler: @escaping (Data) -> Void) {
         
         // Prepare url.
         var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
+        urlComponents.scheme = scheme.rawValue
         urlComponents.host = host
         urlComponents.path = route
         

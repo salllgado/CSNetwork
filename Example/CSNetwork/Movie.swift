@@ -1,31 +1,31 @@
 //
-//  MarvelData.swift
+//  Movie.swift
 //  CSNetwork_Example
 //
-//  Created by Chrystian (Pessoal) on 20/01/2019.
+//  Created by Chrystian (Pessoal) on 26/01/2019.
 //  Copyright © 2019 CSProductions. All rights reserved.
 //
 
 import Foundation
 
-struct MarvelData {
+struct Movie {
     
-    let id: Int
     let name: String
-    let moveis: [Movie]
+    let year: Int
+    let author: String
     
     enum CodingKeys: String, CodingKey {
-        case id
         case name
-        case movies
+        case year
+        case author
     }
 }
 
-extension MarvelData: Decodable {
+extension Movie: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        id = try values.decode(Int.self, forKey: .id)
         name = try values.decode(String.self, forKey: .name)
-        moveis = try values.decode([Movie].self, forKey: .movies)
+        year = try values.decode(String.self, forKey: .year).toInt()!
+        author = try values.decode(String.self, forKey: .author)
     }
 }
